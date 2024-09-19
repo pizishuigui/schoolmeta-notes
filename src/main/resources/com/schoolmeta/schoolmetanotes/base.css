@@ -1,0 +1,21 @@
+.button {
+    -fx-background-color: #F8F8FF; /* 默认背景色 */
+    -fx-text-fill: #000000;
+    -fx-border-radius: 5px;
+    -fx-font-size: 12px;
+}
+
+.button:hover {
+    -fx-background-color: #BEBEBE; /* 鼠标悬停时的背景色 */
+}
+
+.button:pressed {
+    -fx-background-color: #FFF0F5; /* 按钮被按下时的背景色 */
+    -fx-scale-x: 0.95; /* 可选：按钮被按下时稍微缩小一点，但这在大多数平台上可能不会有明显效果 */
+    -fx-scale-y: 0.95;
+}
+.custom-border {
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
