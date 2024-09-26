@@ -1,7 +1,8 @@
-package com.schoolmeta.schoolmetanotes;
+package com.schoolmeta.notes;
 
-import com.schoolmeta.schoolmetanotes.component.widget.CircleProgress;
-import com.schoolmeta.schoolmetanotes.component.widget.StatusCircle;
+import com.schoolmeta.notes.component.widget.CircleProgress;
+import com.schoolmeta.notes.component.widget.StatusCircle;
+import com.schoolmeta.notes.infrastructure.db.DBInitialize;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -9,11 +10,15 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+
 public class TodoListApp extends Application {
         @Override  
         public void start(Stage primaryStage) {
             VBox rootPane = new VBox();
             rootPane.setSpacing(6);
+
+            // 初始化数据库
+            initDB();
 
             // 测试状态label
             testStatueCircle(rootPane);
@@ -24,17 +29,21 @@ public class TodoListApp extends Application {
             showStage(primaryStage, rootPane);
         }
 
+    private void initDB() {
+        DBInitialize.initDB();
+    }
+
     private void testCircleProgress(VBox rootPane) {
         CircleProgress circleProgress = new CircleProgress(10);
         rootPane.getChildren().add(circleProgress);
 
         HBox buttonPane = new HBox();
-        Button button0 = new Button("init");
+        Button button0 = new Button("0.5");
         button0.setOnAction(actionEvent -> {
-            circleProgress.setProgress(0.5);
+            circleProgress.setProgress(0.3);
         });
         buttonPane.getChildren().add(button0);
-        Button button1 = new Button("done");
+        Button button1 = new Button("0.8");
         button1.setOnAction(actionEvent -> {
             circleProgress.setProgress(0.8);
         });

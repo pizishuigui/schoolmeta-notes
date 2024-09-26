@@ -1,4 +1,4 @@
-package com.schoolmeta.schoolmetanotes;
+package com.schoolmeta.notes;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

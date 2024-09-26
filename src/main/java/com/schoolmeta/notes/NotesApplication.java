@@ -1,4 +1,4 @@
-package com.schoolmeta.schoolmetanotes;
+package com.schoolmeta.notes;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,4 @@
-package com.schoolmeta.schoolmetanotes.component.widget;
+package com.schoolmeta.notes.component.widget;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;

@@ -1,8 +1,6 @@
-package com.schoolmeta.schoolmetanotes.component;
+package com.schoolmeta.notes.component;
 
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
