@@ -4,8 +4,6 @@ import com.schoolmeta.notes.domain.dayplan.entity.IItemDetailRepo;
 import com.schoolmeta.notes.domain.dayplan.entity.ItemDetailEntity;
 import com.schoolmeta.notes.infrastructure.db.SQLiteUtil;
 
-import java.util.UUID;
-
 public class ItemDetailRepo implements IItemDetailRepo {
     private String tableName = "t_item_detail";
 
